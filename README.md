@@ -1,6 +1,7 @@
 README.md
 
 run_analysis.R cleans and merges test and train datasets from the Human Activity Recognition Using Smartphones Dataset.
+Final output is a cleaned dataframe in the file tidy_averages.txt.
 
 It uses two key functions:
 

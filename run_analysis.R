@@ -53,4 +53,4 @@ df_select <- cbind(df_select,(select(df_all, contains("mean") | contains("std"))
 
 #creates tidy dataset of unique subject/activities and exports to csv file (step 5 of assignment)
 df_avgs <- df_select %>% group_by(subject, activity) %>% summarise_all("mean")
-write.csv(df_avgs,"./tidy_averages.csv",row.names=FALSE)
+write.table(df_avgs,"./tidy_averages.txt",row.names=FALSE)
